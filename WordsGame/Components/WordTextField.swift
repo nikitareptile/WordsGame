@@ -17,7 +17,7 @@ struct WordTextField: View {
         TextField(placeHolder,
                   text: word)
             .font(.title2)
-            .padding(20)
+            .padding(18)
             .overlay(
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.black, lineWidth: 3)

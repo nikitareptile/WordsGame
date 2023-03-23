@@ -13,8 +13,11 @@ struct StartView: View {
     @State var firstPlayerName = ""
     @State var secondPlayerName = ""
     
+    @State var isShowingGame = false
+    
     var body: some View {
         VStack {
+            
             Spacer()
             
             Text("Words Game")
@@ -23,17 +26,17 @@ struct StartView: View {
             
             WordTextField(word: $startWord,
                           placeHolder: "Write start word")
-                .padding(.top, 30)
+            .padding(.top, 30)
             
             WordTextField(word: $firstPlayerName,
                           placeHolder: "First player")
-                .padding(.top, 30)
+            .padding(.top, 30)
             
             WordTextField(word: $secondPlayerName,
                           placeHolder: "Second player")
             
             Button {
-                print("")
+                isShowingGame.toggle()
             } label: {
                 Text("Start game")
                     .font(.title)
@@ -44,13 +47,15 @@ struct StartView: View {
                     .background(Color.black)
                     .cornerRadius(20)
                     .padding(.top, 50)
-                    
             }
-
             
             Spacer()
+            
         }
         .padding()
+        .fullScreenCover(isPresented: $isShowingGame) {
+            GameView()
+        }
     }
     
 }

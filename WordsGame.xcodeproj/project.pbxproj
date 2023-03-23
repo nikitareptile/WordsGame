@@ -12,6 +12,7 @@
 		FDD9122929C3426500218844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD9122829C3426500218844 /* Assets.xcassets */; };
 		FDD9122C29C3426500218844 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD9122B29C3426500218844 /* Preview Assets.xcassets */; };
 		FDD9123629C3523F00218844 /* WordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD9123529C3523F00218844 /* WordTextField.swift */; };
+		FDD9123829C355FA00218844 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD9123729C355FA00218844 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		FDD9122829C3426500218844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD9122B29C3426500218844 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDD9123529C3523F00218844 /* WordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTextField.swift; sourceTree = "<group>"; };
+		FDD9123729C355FA00218844 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				FDD9122429C3426400218844 /* WordsGameApp.swift */,
-				FDD9122629C3426400218844 /* StartView.swift */,
+				FDD9123929C3561800218844 /* Views */,
 				FDD9123229C3512900218844 /* Components */,
 				FDD9122829C3426500218844 /* Assets.xcassets */,
 				FDD9122A29C3426500218844 /* Preview Content */,
@@ -76,6 +78,15 @@
 				FDD9123529C3523F00218844 /* WordTextField.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FDD9123929C3561800218844 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9122629C3426400218844 /* StartView.swift */,
+				FDD9123729C355FA00218844 /* GameView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				FDD9123629C3523F00218844 /* WordTextField.swift in Sources */,
 				FDD9122729C3426400218844 /* StartView.swift in Sources */,
+				FDD9123829C355FA00218844 /* GameView.swift in Sources */,
 				FDD9122529C3426400218844 /* WordsGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
